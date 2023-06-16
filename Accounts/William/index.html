@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Downloader</title>
+</head>
+<body>
+    <h1>File Downloader</h1>
+    
+    <button onclick="DownloadTOTK()">Download TOTK</button>
+    
+    <script>
+        function DownloadTOTK()
+        {
+            var fileUrl = "RetroArchTV.ipa"; // Replace with the URL of the file you want to download
+            var fileName = "RetroArchTV.ipa"; // Replace with the desired file name
+            
+            var link = document.createElement("a");
+            link.href = fileUrl;
+            link.download = fileName;
+            link.click();
+        }
+    </script>
+</body>
+</html>
 
